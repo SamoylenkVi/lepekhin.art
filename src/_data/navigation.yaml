@@ -1,0 +1,13 @@
+items:
+  - text: Проекты
+    url: /projects/
+  - text: Студия
+    url: /#/
+  - text: Курсы
+    url: /#/
+  - text: Журнал
+    url: /#/
+  - text: Магазин
+    url: /#/
+  - text: Сервисы
+    url: /#/

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preload" href="fonts/Apoc-Regular-Web.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body>
+    <div class="page">
+        <header class="header wrapper">
+    <div class="header__wrapper">
+        <a class="page-header__home" href="/"> <img class="page-header__logo" src="/img/logo-studio.svg" width="231" height="40" alt="Лепёхин"></a>
+        <nav class="page-header__navigation">
+            <ul class="page-header__navigation">
+                <li class="page-header__item">
+                    <a class="page-header__link" href="/">Новое</a>
+                </li>
+                
+                <li class="page-header__item">
+                    <a class="page-header__link" aria-current="page">Проекты</a>
+                </li>
+            
+                <li class="page-header__item">
+                    <a class="page-header__link" href="/#/">Студия</a>
+                </li>
+            
+                <li class="page-header__item">
+                    <a class="page-header__link" href="/#/">Курсы</a>
+                </li>
+            
+                <li class="page-header__item">
+                    <a class="page-header__link" href="/#/">Журнал</a>
+                </li>
+            
+                <li class="page-header__item">
+                    <a class="page-header__link" href="/#/">Магазин</a>
+                </li>
+            
+                <li class="page-header__item">
+                    <a class="page-header__link" href="/#/">Сервисы</a>
+                </li>
+            
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+        <main class="wrapper">
+            
+Привет
+        </main>
+        <footer class="footer wrapper">
+    <div class="footer__wrapper">
+        <div class="footer__studio-label">
+            <a class="footer__home"  href="/" > <img class="footer__logo" src="/img/logo-studio.svg" width="231" height="40" alt="Лепёхин"></a>
+            <span class="footer__copyright">© Студия Евгения Лепёхина 2017…2022</span>
+        </div>
+        <div class="footer__cantacts">
+            <ul>
+                <li><a class="footer__link" href="mailto:hello@lepekhin.studio">hello@lepekhin.studio</a></li>
+                <li><a class="footer__link" href="tel:+79504995990">+7 950 499-59-90</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li><a class="footer__link" href="https://t.me/lepekhinstudio">Телеграм</a></li>
+                <li><a class="footer__link" href="https://vk.com/lepekhinstudio">ВКонтакте</a></li>
+                <li><a class="footer__link" href="https://www.behance.net/lepekhinstudio">Биханс</a></li>
+            </ul>
+        </div>
+        <div class="footer__studio-information">
+            <a class="footer__link" href="">Подписаться на рассылку →</a>
+            <ul class="footer__list">
+                <li><a class="footer__link" href="">Договор и условия</a></li>
+                <li><a class="footer__link" href="https://elba.kontur.ru/card/lepekhin">Реквизиты студии</a></li>
+                <li><a class="footer__link" href="https://docs.google.com/document/d/1pVJAbN8KmAKf5PvjB85avqBVZGQ_yq1aMDNdjJ66eUo/edit?usp=sharing">Конфиденциальность</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+        <div class="offer wrapper">
+            <button class="offer-button" type="button" aria-label="Начать работу с нами">Начать работу с нами </button>
+        </div>
+    </div>
+    <section class="popup popup--closed">
+    <div class="popup__underlay"></div>
+    <div class="popup__wrapper">
+        <div class="popup__offer">
+            <button class="popup__button-close" type="button" aria-label="Закрыть окно заявки"></button>
+            <h2>Заказать дизайн</h2>
+            <p>Чтобы начать работу, нам нужно разобраться в&nbsp;задаче. Расскажите о&nbsp;вашем проекте, и&nbsp;мы&nbsp;свяжемся, чтобы обсудить детали. На&nbsp;созвоне мы&nbsp;зададим вопросы, которые помогут понять задачу и&nbsp;ваши ожидания.</p>
+            <p>Клиенты ценят нас за&nbsp;умение внимательно слушать, за&nbsp;высокую скорость работы, за&nbsp;невероятную отдачу и&nbsp;страсть. Мы&nbsp;славимся тем, что всегда доводим начатое до&nbsp;конца, отвечаем за&nbsp;продукт от&nbsp;брифа до&nbsp;запуска и&nbsp;не&nbsp;бросаем клиента в&nbsp;сложной ситуации.</p>
+            <form class="popup__order-form form" method="POST">
+                <p class="form__item">
+                    <input class="form__field" type="text" id="organization" name="organization" aria-label="Введите название компании или проекта" placeholder=" ">
+                    <label for="organization">Название компании или проекта</label>
+                </p>
+                <p class="form__item">
+                    <input class="form__field" type="text" id="about" name="about" aria-label="Расскажите о проекте: задача, сроки, примерный бюджет"placeholder=" ">
+                    <label for="about">Расскажите о проекте: задача, сроки, примерный бюджет</label>
+                </p>
+                <p class="form__item">
+                    <input class="form__field" type="tel" name="tel" id="tel" aria-label="Введите ваш номер телефона" pattern="^(\+7|8)?[\s\-]?\(?[0-9]{3}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" placeholder=" ">
+                    <label for="tel">Телефон или мессенджер</label>
+                </p>
+                <p class="form__item">
+                    <input class="form__field" type="email" id="email" name="email" aria-label="Введите ваш email" pattern="^(?:[-a-z\d\+\*\/\?!{}~_%&'=^$#]+(?:\.[-a-z\d\+\*\/\?!{}~_%&'=^$#]+)*)@(?:[-a-z\d_]+\.){1,60}[a-z]{2,6}$" placeholder=" ">
+                    <label for="email">Электронная почта</label>
+                </p>
+                <p class="form__item"> 
+                    <input class="form__field" type="text" id="name" name="name" aria-label="Введите ваше имя" placeholder=" ">
+                    <label for="name">Имя</label>
+                </p>
+                <p class="form__item">
+                    <input class="form__field" type="text" id="file" name="file" aria-label="Прикрепите ссылку на дополнительные файлы" placeholder=" ">
+                    <label for="file">Прикрепить ссылку на файлы </label>
+                </p>
+                <button type="submit" class="form__button-submit">Отправить заявку</button>
+            </form>
+        </div>
+        <aside class="popup__aside"></aside>
+    </div>
+</section>
+    
+  <script>
+      
+    const keys = {
+    ESCAPE: 'Escape',
+    ESC: 'Esc',
+};
+
+const PHONE_CODE = '+7(';
+
+const regexPhoneInput = new RegExp(/\+?7?\(?([0-9]{0,3})\)?([0-9]{0,3})\-?([0-9]{0,2})\-?([0-9]{0,2})/, 'g');
+const page = document.querySelector('body');
+const buttonPopupOpen = document.querySelector('.offer-button')
+const popupFormApplication = document.querySelector('.popup')
+const popupButtonClose = popupFormApplication.querySelector('.popup__button-close');
+const popupForm = popupFormApplication.querySelector('form')
+const popupPhone = popupForm.querySelector('#tel');
+const isPopupExist = popupFormApplication && buttonPopupOpen && popupButtonClose;
+
+const focusPhoneHandler = (evt) => {
+    if (evt.target.value.length === 0) {
+      evt.target.value = PHONE_CODE;
+    }
+};
+  
+const maskPhoneHandler = (evt) => {
+  
+    const [, group1, group2, group3, group4] = Array.from(evt.target.value.matchAll(regexPhoneInput))[0];
+  
+    evt.target.value = PHONE_CODE;
+  
+    if (group1) {
+      evt.target.value += group1;
+    }
+  
+    if (group2) {
+      evt.target.value += `)${group2}`;
+    }
+  
+    if (group3) {
+      evt.target.value += `-${group3}`;
+    }
+  
+    if (group4) {
+      evt.target.value += `-${group4}`;
+    }
+};
+  
+if (popupPhone) {
+    popupPhone.addEventListener('focus', focusPhoneHandler);
+    popupPhone.addEventListener('input', maskPhoneHandler);
+}
+  
+const openPopupHandler = (evt) => {
+    evt.preventDefault();
+  
+    page.style.overflow = 'hidden';
+    popupFormApplication.classList.remove('popup--closed')
+  
+
+    popupButtonClose.addEventListener('click', closePopupHandler);
+    document.addEventListener('keydown', escapeKeydownHandler);
+};
+  
+const closePopupHandler = (evt) => {
+    evt.preventDefault();
+  
+    page.style.overflow = 'auto';
+    popupFormApplication.classList.add('popup--closed')
+  
+  
+    popupButtonClose.removeEventListener('click', closePopupHandler);
+    document.removeEventListener('keydown', escapeKeydownHandler);
+  
+};
+  
+const escapeKeydownHandler = (evt) => {
+    if (evt.key === keys.ESCAPE || evt.key === keys.ESC) {
+      closePopupHandler(evt);
+    }
+};
+  
+
+buttonPopupOpen.addEventListener('click', openPopupHandler);
+  
+  
+  </script>
+</body >
+</html >

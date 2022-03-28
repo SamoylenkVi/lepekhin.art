@@ -1,0 +1,27 @@
+<footer class="footer wrapper">
+    <div class="footer__wrapper">
+        <div class="footer__studio-label">
+            <a class="footer__home" {% if path !='home' %} href="{{ '/' | url }}" {% endif %}> <img class="footer__logo" src="{{ '/img/logo-studio.svg' | url }}" width="231" height="40" alt="Лепёхин"></a>
+            <span class="footer__copyright">© Студия Евгения Лепёхина 2017…2022</span>
+        </div>
+        <div class="footer__cantacts">
+            <ul>
+                <li><a class="footer__link" href="mailto:{{settings.email}}">{{settings.email}}</a></li>
+                <li><a class="footer__link" href="tel:{{ settings.tel | replace(' ', '') | replace('-', '') }}">{{settings.tel}}</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li><a class="footer__link" href="{{settings.tg}}">Телеграм</a></li>
+                <li><a class="footer__link" href="{{settings.vk}}">ВКонтакте</a></li>
+                <li><a class="footer__link" href="{{settings.bh}}">Биханс</a></li>
+            </ul>
+        </div>
+        <div class="footer__studio-information">
+            <a class="footer__link" href="{{settings.mailing}}">Подписаться на рассылку →</a>
+            <ul class="footer__list">
+                <li><a class="footer__link" href="{{settings.contract}}">Договор и условия</a></li>
+                <li><a class="footer__link" href="{{settings.requisites}}">Реквизиты студии</a></li>
+                <li><a class="footer__link" href="{{settings.policy}}">Конфиденциальность</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
