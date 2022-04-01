@@ -12,24 +12,24 @@
                     <label for="organization">Название компании или проекта</label>
                 </p>
                 <p class="form__item">
-                    <input class="form__field" type="text" id="about" name="about" aria-label="Расскажите о проекте: задача, сроки, примерный бюджет"placeholder=" ">
-                    <label for="about">Расскажите о проекте: задача, сроки, примерный бюджет</label>
-                </p>
-                <p class="form__item">
-                    <input class="form__field" type="tel" name="tel" id="tel" aria-label="Введите ваш номер телефона" pattern="^(\+7|8)?[\s\-]?\(?[0-9]{3}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" placeholder=" ">
+                    <input class="form__field" type="tel" name="tel" id="tel" aria-label="Введите ваш номер телефона" pattern="^(\+7|8)?[\s\-]?\(?[0-9]{3}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" placeholder=" " required>
                     <label for="tel">Телефон или мессенджер</label>
                 </p>
                 <p class="form__item">
-                    <input class="form__field" type="email" id="email" name="email" aria-label="Введите ваш email" pattern="^(?:[-a-z\d\+\*\/\?!{}~_%&'=^$#]+(?:\.[-a-z\d\+\*\/\?!{}~_%&'=^$#]+)*)@(?:[-a-z\d_]+\.){1,60}[a-z]{2,6}$" placeholder=" ">
+                    <input class="form__field" type="email" id="email" name="email" aria-label="Введите ваш email" pattern="^(?:[-a-z\d\+\*\/\?!{}~_%&'=^$#]+(?:\.[-a-z\d\+\*\/\?!{}~_%&'=^$#]+)*)@(?:[-a-z\d_]+\.){1,60}[a-z]{2,6}$" placeholder=" " required>
                     <label for="email">Электронная почта</label>
                 </p>
                 <p class="form__item"> 
-                    <input class="form__field" type="text" id="name" name="name" aria-label="Введите ваше имя" placeholder=" ">
+                    <input class="form__field" type="text" id="name" name="name" aria-label="Введите ваше имя" placeholder=" " required>
                     <label for="name">Имя</label>
                 </p>
                 <p class="form__item">
                     <input class="form__field" type="text" id="file" name="file" aria-label="Прикрепите ссылку на дополнительные файлы" placeholder=" ">
                     <label for="file">Прикрепить ссылку на файлы </label>
+                </p>
+                <p class="form__item">
+                    <textarea class="form__field" type="text" id="about" name="about" rows="5" aria-label="Расскажите о проекте: задача, сроки, примерный бюджет"placeholder=" "></textarea>
+                    <label for="about">Расскажите о проекте: задача, сроки, примерный бюджет</label>
                 </p>
                 <button type="submit" class="form__button-submit">Отправить заявку</button>
             </form>

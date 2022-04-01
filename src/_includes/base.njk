@@ -14,9 +14,7 @@
 <body>
     <div class="page">
         {% include "partials/navigation.njk" %}
-        <main class="wrapper">
-            {{content | safe}}
-        </main>
+        {{content | safe}}
         {% include "partials/footer.njk" %}
         <div class="offer wrapper">
             <button class="offer-button" type="button" aria-label="Начать работу с нами">Начать работу с нами </button>
@@ -25,6 +23,7 @@
     {% include "partials/popup.njk" %}
     {% set js %}
     {% include "popup.js" %}
+    {% include "menu.js" %}
   {% endset %}
   <script>
       {{ js | safe }}
