@@ -1,17 +1,22 @@
 items:
-  - img: img/Genius-bottle-animation.jpg
+  - img: img/genius-bottle-animation.jpg
+    imgWebp: img/genius-bottle-animation.webp
     title: Логотип и айдентика иммерсивного шоу «Джиниус»
     link: /projects/
-  - img: img/DGPP-T-shirts-2.jpg
+  - img: img/dgpp-t-shirts-2.jpg
+    imgWebp: img/dgpp-t-shirts-2.webp
     title: Логотип и айдентика конкурса по русскому языку «Давайте говорить и писать правильно»
     link: /projects/
-  - img: img/Poteryashki_Cover.jpg
+  - img: img/poteryashki_cover.jpg
+    imgWebp: img/poteryashki_cover.webp
     title: Логотип благотворительного фонда помощи бездомным животным «Потеряшки»
     link: /projects/
-  - img: img/Нейропси_site_cover.jpg
+  - img: img/neuropsy_site_cover.jpg
+    imgWebp: img/neuropsy_site_cover.webp
     title: Логотип и айдентика клиники научно-доказательной психотерапии и психологии «Нейро-пси»
     link: /projects/
   - img: img/plate-photo.jpg
+    imgWebp: img/plate-photo.webp
     title: Информационная табличка для объектов компании «Колесник»
     link: /projects/
     description: Доходный дом «Колесник» — инвестиционная компания в сфере коммерческое недвижимости. Команда доходного дома выкупает неприглядные здания на инвесторские деньги, реставрирует их и продаёт в качестве готового арендного бизнеса. В студии разработали дизайн таблички с информацией о реновации здания, архитекторе и исполнителе.

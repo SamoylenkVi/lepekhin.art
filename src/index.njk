@@ -1,29 +1,36 @@
 ---
 layout: "base.njk"
+title: "Студия Евгения Лепехина"
 ---
 
 <main>
+    <h1 class="visually-hidden">Студия Евгения Лепёхина, мультидисциплинарная дизайн-студия с распределённой командой дизайнеров, разработчиков и менеджеров из разных стран.</h1>
     <section class="promo">
+        <h2 class="visually-hidden">Видео с последними проектами студии</h2>
         <div class="promo__wrapper wrapper">
             <div class="promo__video video">
                 <!-- <img class="video__media" src="/img/Tochka cveta-box.jpg" alt="Точка Цвета"> -->
-                <iframe class="video__media" src="https://player.vimeo.com/video/687863122?h=73a40f740b&color=ff9933&title=0&byline=0" frameborder="0" allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>
+                <iframe class="video__media" src="https://player.vimeo.com/video/687863122?h=73a40f740b&color=ff9933&controls=0&title=0&byline=0" allowfullscreen></iframe><script src="https://player.vimeo.com/api/player.js"></script>
             </div>
             <div class="promo__text project-description">
-                <a class="project-description__link project-description__title " href>Логотип и&nbsp;айдентика фотолаборитории&nbsp;&laquo;Точка цвета&raquo;</a>
+                <a class="project-description__link project-description__title " href>Логотип и&nbsp;айдентика <br> фотолаборитории &laquo;Точка цвета&raquo;</a>
                 <p class="project-description__text">Ещё пять лет назад фотоплёнка казалась забытым искусством. Но&nbsp;сегодня на&nbsp;плёнку снимает каждый пятый: молодёжь открывает для себя прелесть неизвестности, а&nbsp;пенсионеры ностильгируют, сдувая пыль со&nbsp;своих ФЭДов и&nbsp;Зенитов. В&nbsp;студии сделали новый смелый и&nbsp;заряженный логотип для&nbsp;фотолаборатории &laquo;Точка цвета&raquo;.</p>
             </div>
         </div>
     </section>
     
     <section class="main-projects">
+        <h2 class="visually-hidden">Проекты студии</h2>
         <div class="main-projects__wrapper wrapper">
             <ul class="main-projects__list">
                 {% for item in projects.items %}
                 <li class="main-projects__item">
                   <a class="main-projects__link" href="{{item.link}}">
                       <div class="main-projects__picture-wrapper">
-                          <img src="{{ item.img | url }}" class="main-projects__picture" width="680" height="510" alt="{{item.title}}" loading="lazy">
+                        <picture>
+                            <source type="image/webp" srcset="{{ item.imgWebp | url }}">
+                            <img src="{{ item.img | url }}" class="main-projects__picture" width="680" height="510" alt="{{item.title}}" loading="lazy">
+                        </picture>
                       </div>
                     <div class="main-projects__description-wrapper">
                         <h3 class="main-projects__title">{{item.title}}</h3>

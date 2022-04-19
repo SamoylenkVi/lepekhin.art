@@ -1,24 +1,26 @@
 <header class="page-header wrapper  page-header--light">
     <div class="page-header__wrapper">
         <div class="page-header__menu">
-            <a class="page-header__home"{% if path != 'home' %} href="{{ '/' | url }}"{% endif %}> 
+            <a class="page-header__home" {% if path !='home' %} href="{{ '/' | url }}" {% endif %}>
                 <img class="page-header__logo" src="{{ '/img/logo-studio.svg' | url }}" width="231" height="40" alt="Лепёхин">
-                <img class="page-header__logo-mobile" src="{{ '/img/logo-studio-mobile.svg' | url }}" width="35" height="38" alt="Лепёхин">  
+                <img class="page-header__logo-mobile" src="{{ '/img/logo-studio-mobile.svg' | url }}" width="35" height="38" alt="Лепёхин">
             </a>
             <button class="page-header__open-menu" type="button" aria-label="Открыть главное меню"></button>
         </div>
-        <nav class="page-header__navigation">
-            <ul class="page-header__navigation-list">
-                <li class="page-header__item">
-                    <a class="page-header__link"{% if path == 'home' %} aria-current="page"{% else %} href="{{ '/' | url }}"{% endif %}>Новое</a>
-                </li>
-                {% for item in navigation.items %}
-                <li class="page-header__item">
-                    <a class="page-header__link"{% if item.url in page.url %} aria-current="page"{% else %} href="{{item.url}}"{% endif %}>{{item.text}}</a>
-                </li>
-            {% endfor %}
-            </ul>
-        </nav>
-        
+        <div class="page-header__navigation-wrapper">
+            <div class="page-header__navigation-overlay"></div>
+            <nav class="page-header__navigation">
+                <ul class="page-header__navigation-list">
+                    <li class="page-header__item">
+                        <a class="page-header__link" {% if path=='home' %} aria-current="page" {% else %} href="{{ '/' | url }}" {% endif %}>Новое</a>
+                    </li>
+                    {% for item in navigation.items %}
+                    <li class="page-header__item">
+                        <a class="page-header__link" {% if item.url in page.url %} aria-current="page" {% else %} href="{{item.url}}" {% endif %}>{{item.text}}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
     </div>
 </header>

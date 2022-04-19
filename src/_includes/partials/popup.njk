@@ -3,24 +3,24 @@
     <div class="popup__wrapper">
         <div class="popup__offer">
             <button class="popup__button-close" type="button" aria-label="Закрыть окно заявки"></button>
-            <h2>Заказать дизайн</h2>
+            <h2 class="popup__title title">Заказать дизайн</h2>
             <p>Чтобы начать работу, нам нужно разобраться в&nbsp;задаче. Расскажите о&nbsp;вашем проекте, и&nbsp;мы&nbsp;свяжемся, чтобы обсудить детали. На&nbsp;созвоне мы&nbsp;зададим вопросы, которые помогут понять задачу и&nbsp;ваши ожидания.</p>
             <p>Клиенты ценят нас за&nbsp;умение внимательно слушать, за&nbsp;высокую скорость работы, за&nbsp;невероятную отдачу и&nbsp;страсть. Мы&nbsp;славимся тем, что всегда доводим начатое до&nbsp;конца, отвечаем за&nbsp;продукт от&nbsp;брифа до&nbsp;запуска и&nbsp;не&nbsp;бросаем клиента в&nbsp;сложной ситуации.</p>
-            <form class="popup__order-form form" method="POST">
+            <form class="popup__order-form form" method="get" action="https://echo.htmlacademy.ru/">
                 <p class="form__item">
                     <input class="form__field" type="text" id="organization" name="organization" aria-label="Введите название компании или проекта" placeholder=" ">
                     <label for="organization">Название компании или проекта</label>
                 </p>
                 <p class="form__item">
-                    <input class="form__field" type="tel" name="tel" id="tel" aria-label="Введите ваш номер телефона" pattern="^(\+7|8)?[\s\-]?\(?[0-9]{3}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" placeholder=" " required>
+                    <input class="form__field" data-validate="tel" type="tel" id="tel" name="tel" aria-label="Введите ваш номер телефона" pattern="^(\+7|8)?[\s\-]?\(?[0-9]{3}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$" placeholder=" " required>
                     <label for="tel">Телефон или мессенджер</label>
                 </p>
                 <p class="form__item">
-                    <input class="form__field" type="email" id="email" name="email" aria-label="Введите ваш email" pattern="^(?:[-a-z\d\+\*\/\?!{}~_%&'=^$#]+(?:\.[-a-z\d\+\*\/\?!{}~_%&'=^$#]+)*)@(?:[-a-z\d_]+\.){1,60}[a-z]{2,6}$" placeholder=" " required>
+                    <input class="form__field" data-validate="email" type="email" id="email" name="email" aria-label="Введите ваш email" pattern="^(?:[-a-z\d\+\*\/\?!{}~_%&'=^$#]+(?:\.[-a-z\d\+\*\/\?!{}~_%&'=^$#]+)*)@(?:[-a-z\d_]+\.){1,60}[a-z]{2,6}$" placeholder=" " required>
                     <label for="email">Электронная почта</label>
                 </p>
                 <p class="form__item"> 
-                    <input class="form__field" type="text" id="name" name="name" aria-label="Введите ваше имя" placeholder=" " required>
+                    <input class="form__field" data-validate="name" type="text" id="name" name="name" aria-label="Введите ваше имя" placeholder=" " required>
                     <label for="name">Имя</label>
                 </p>
                 <p class="form__item">
@@ -28,7 +28,7 @@
                     <label for="file">Прикрепить ссылку на файлы </label>
                 </p>
                 <p class="form__item">
-                    <textarea class="form__field" type="text" id="about" name="about" rows="5" aria-label="Расскажите о проекте: задача, сроки, примерный бюджет"placeholder=" "></textarea>
+                    <textarea class="form__field form__field--about" id="about" name="about" rows="5" aria-label="Расскажите о проекте: задача, сроки, примерный бюджет" placeholder=" "></textarea>
                     <label for="about">Расскажите о проекте: задача, сроки, примерный бюджет</label>
                 </p>
                 <button type="submit" class="form__button-submit">Отправить заявку</button>
