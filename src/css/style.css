@@ -113,6 +113,8 @@ img {
     z-index: 5;
     bottom: 30px;
     padding-right: 40px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .offer-button {
@@ -145,6 +147,8 @@ img {
         padding-right: 15px;
         bottom: 0px;
         padding-bottom: 15px;
+        left: 0;
+        transform: translateX(0);
     }
 
     .offer-button {
@@ -548,6 +552,18 @@ img {
 
     .main-projects__item:nth-of-type(5n) .main-projects__description-wrapper {
         padding: 0;
+    }
+
+    .main-projects__picture-wrapper {
+        width: 100%;
+    }
+
+    .main-projects__picture-wrapper picture {
+        flex-grow: 1;
+    }
+
+    .main-projects__picture {
+        width: 100%
     }
 }
 
