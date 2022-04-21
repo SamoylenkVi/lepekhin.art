@@ -6,7 +6,7 @@
   "scripts": {
     "eleventy": "eleventy --serve",
     "debug": "set DEBUG=* & eleventy",
-    "build": "cross-env NODE_ENV=production eleventy"
+    "build": "env NODE_ENV=production npx eleventy --pathprefix 'eleventy-gh-demo'"
   },
   "keywords": [],
   "author": "",
