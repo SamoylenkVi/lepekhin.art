@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node node_modules/.bin/eleventy",
+    "start": "npx @11ty/eleventy --serve",
     "debug": "set DEBUG=* & eleventy",
     "build": "env NODE_ENV=production eleventy --pathprefix 'eleventy-gh-demo'"
   },
