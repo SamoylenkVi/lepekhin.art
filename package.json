@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve"
+    "eleventy": "eleventy --serve",
+    "debug": "set DEBUG=* & eleventy",
+    "build": "cross-env NODE_ENV=production eleventy"
   },
   "keywords": [],
   "author": "",
@@ -14,3 +16,4 @@
     "js-yaml": "^4.1.0"
   }
 }
+
