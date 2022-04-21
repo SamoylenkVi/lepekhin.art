@@ -13,9 +13,10 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/fonts");
     // Return your Object options:
     return {
+      pathPrefix: "/lepekhin.art/",
       dir: {
         input: "src",
-        output: "build"
+        output: "docs"
       }
     }
   };
