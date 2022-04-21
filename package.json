@@ -11,7 +11,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@11ty/eleventy": "^1.0.0",
     "eleventy": "1.0.6",
     "js-yaml": "^4.1.0"
