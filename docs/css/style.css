@@ -329,7 +329,7 @@ img {
         left: 25%;
         width: 25px;
         height: 25px;
-        background-image: url(/img/closed.svg);
+        background-image: url('../img/closed.svg');
         background-repeat: no-repeat;
         background-size: contain;
         transform: rotate(45deg);
