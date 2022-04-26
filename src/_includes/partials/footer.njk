@@ -1,5 +1,5 @@
-<footer class="footer wrapper">
-    <div class="footer__wrapper">
+<footer class="footer">
+    <div class="footer__wrapper wrapper">
         <a class="footer__home" {% if path !='home' %} href="{{ '/' | url }}" {% endif %}> <img class="footer__logo" src="{{ '/img/logo-studio.svg' | url }}" width="231" height="40" alt="Лепёхин"></a>
         <span class="footer__copyright">© Студия Евгения Лепёхина 2017…2022</span>
         <div class="footer__cantacts">
@@ -14,7 +14,9 @@
             </ul>
         </div>
         <div class="footer__studio-information">
-            <a class="footer__link" href="{{settings.mailing}}">Подписаться на рассылку →</a>
+            <div>
+                 <a class="footer__link" href="{{settings.mailing}}">Подписаться на рассылку&nbsp;→</a>
+            </div>
             <ul class="footer__list">
                 <li><a class="footer__link" href="{{settings.contract}}">Договор и условия</a></li>
                 <li><a class="footer__link" href="{{settings.requisites}}">Реквизиты студии</a></li>

@@ -13,7 +13,7 @@
 
 <body>
     <div class="page">
-        <header class="page-header wrapper  page-header--light">
+        <header class="page-header wrapper page-header--light">
     <div class="page-header__wrapper">
         <div class="page-header__menu">
             <a class="page-header__home"  href="/lepekhin.art/" >
@@ -64,7 +64,7 @@
     <h1 class="visually-hidden">Все проекты студии</h1>
     <section class="promo">
         <h2 class="visually-hidden">Айдентика кофейни Дисциплина</h2>
-        <div class="promo__wrapper wrapper">
+        <div class="promo__wrapper">
             <div class="promo__video-wrapper">
                 <div class="promo__video video">
                     <picture>
@@ -143,9 +143,9 @@
         <div class="project__text-wrapper">
             <p class="project__text" >Снимая на&nbsp;плёнку, никогда нельзя быть уверенным в&nbsp;результате. Пока не&nbsp;проявишь, не&nbsp;узнаешь, что получилось. Но&nbsp;даже <nobr>какие-то</nobr> недостатки: засветы, зернистость, царапины&nbsp;&mdash; не&nbsp;портят, а&nbsp;наоборот, добавляют шарма и&nbsp;атмосферности. Новый логотип &laquo;Точки цвета&raquo; очень точно отражает суть работы с&nbsp;плёнкой: он&nbsp;живой, настоящий и&nbsp;тёплый, как кадры на&nbsp;старый &laquo;Зенит&raquo;.</p>
         </div>
-        <div class="project__large-picture">
+        <div class="project__picture">
             <picture>
-                <source type="image/webp" srcset="/img/tochka-cveta-box.webp">
+                <source type="image/webp" srcset="../img/tochka-cveta-box.webp">
                 <img src="../img/tochka-cveta-box.jpg" alt="Точка Цвета" loading="lazy">
             </picture>
         </div>
@@ -178,8 +178,8 @@
         </div>
     </section>
     
-    <section class="similar-projects main-projects wrapper">
-        <div class="similar-projects__wrapper">
+    <section class="similar-projects main-projects">
+        <div class="similar-projects__wrapper wrapper">
             <h2 class="similar-projects__title title">Похожие проекты</h2>
             <ul class="similar-projects__list main-projects__list">
                 
@@ -264,8 +264,8 @@
         </div>
     </section>
 </main>
-        <footer class="footer wrapper">
-    <div class="footer__wrapper">
+        <footer class="footer">
+    <div class="footer__wrapper wrapper">
         <a class="footer__home"  href="/lepekhin.art/" > <img class="footer__logo" src="/lepekhin.art/img/logo-studio.svg" width="231" height="40" alt="Лепёхин"></a>
         <span class="footer__copyright">© Студия Евгения Лепёхина 2017…2022</span>
         <div class="footer__cantacts">
@@ -280,7 +280,9 @@
             </ul>
         </div>
         <div class="footer__studio-information">
-            <a class="footer__link" href="">Подписаться на рассылку →</a>
+            <div>
+                 <a class="footer__link" href="">Подписаться на рассылку&nbsp;→</a>
+            </div>
             <ul class="footer__list">
                 <li><a class="footer__link" href="">Договор и условия</a></li>
                 <li><a class="footer__link" href="https://elba.kontur.ru/card/lepekhin">Реквизиты студии</a></li>
