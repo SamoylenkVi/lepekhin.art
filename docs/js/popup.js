@@ -48,6 +48,7 @@ const popupPhone = popupForm.querySelector('#tel');
 const validatedElements = popupForm.querySelectorAll('[data-validate]');
 const isPopupExist = popupFormApplication && buttonPopupOpen && popupButtonClose;
 
+
 const focusPhoneHandler = (evt) => {
     if (evt.target.value.length === 0) {
       evt.target.value = PHONE_CODE;
@@ -115,6 +116,7 @@ const escapeKeydownHandler = (evt) => {
 buttonPopupOpen.addEventListener('click', openPopupHandler);
 
 popupForm.setAttribute('novalidate', '');
+
 
 const validateFormField = (input) => { 
   const inputValidations = ValidationError[input.dataset.validate];
