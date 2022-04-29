@@ -1,0 +1,47 @@
+teammates:
+  - img: img/mikhail-vorobyov.jpg
+    imgWebp: img/mikhail-vorobyov.webp
+    title: Михаил Воробьёв, технолог
+    name: Михаил Воробьёв
+    position: технолог
+  - img: img/kira-shakarun.jpg
+    imgWebp: img/kira-shakarun.webp
+    title: Кира Шкарун, дизайнер
+    name: Кира Шкарун
+    position: дизайнер
+  - img: img/evgeny-lepekhin.jpg
+    imgWebp: img/evgeny-lepekhin.webp
+    title: Евгений Лепёхин, арт-директор
+    name: Евгений Лепёхин
+    position: арт-директор
+  - img: img/mikhail-vorobyov.jpg
+    imgWebp: img/mikhail-vorobyov.webp
+    title: Михаил Воробьёв, технолог
+    name: Михаил Воробьёв
+    position: технолог
+  - img: img/kira-shakarun.jpg
+    imgWebp: img/kira-shakarun.webp
+    title: Кира Шкарун, дизайнер
+    name: Кира Шкарун
+    position: дизайнер
+  - img: img/evgeny-lepekhin.jpg
+    imgWebp: img/evgeny-lepekhin.webp
+    title: Евгений Лепёхин, арт-директор
+    name: Евгений Лепёхин
+    position: арт-директор
+  - img: img/mikhail-vorobyov.jpg
+    imgWebp: img/mikhail-vorobyov.webp
+    title: Михаил Воробьёв, технолог
+    name: Михаил Воробьёв
+    position: технолог
+  - img: img/kira-shakarun.jpg
+    imgWebp: img/kira-shakarun.webp
+    title: Кира Шкарун, дизайнер
+    name: Кира Шкарун
+    position: дизайнер
+  - img: img/evgeny-lepekhin.jpg
+    imgWebp: img/evgeny-lepekhin.webp
+    title: Евгений Лепёхин, арт-директор
+    name: Евгений Лепёхин
+    position: арт-директор
+  

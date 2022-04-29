@@ -1,0 +1,38 @@
+---
+layout: "base.njk"
+title: "Студия Евгения Лепехина"
+---
+
+<main>
+    <div class="heading wrapper">
+        <h1 class="heading__title main-title">Кто такие</h1>
+    </div>
+    <section class="about-us">
+        <div class="about-us__wrapper wrapper">
+            <p class="about-us__description">Мы&nbsp;&mdash; мультидисциплинарная <nobr>дизайн-студия</nobr> с&nbsp;распределённой командой дизайнеров, разработчиков и&nbsp;менеджеров из&nbsp;разных стран.</p>
+            <p class="about-us__description"> Умеем работать, решать сложные задачи. Ценим свой труд, уважаем себя и&nbsp;не&nbsp;делаем ширпотреб.</p>
+            <p class="about-us__advantage">Создаём сильные решения, которые помогают бизнесу развиваться, выходить на&nbsp;новые рынки и&nbsp;зарабатывать больше</p>
+        </div>
+    </section>
+    <section class="team">
+        <h2 class="visually-hidden">Команда студии Евгения Лепехина</h2>
+        <div class="team__wrapper wrapper">
+            {% if team.teammates %}
+            <ul class="team__list">
+                {% for person in team.teammates %}
+                    <li class="team_item">
+                        <div>
+                            <picture>
+                                <source type="image/webp" srcset="../{{ person.imgWebp | url }}">
+                                <img src="../{{ person.img | url }}" class="team__picture" width="260" height="400" alt="{{person.title}}" loading="lazy">
+                            </picture>
+                        </div>
+                        <p class="team__name">{{person.name}}</p>
+                        <p class="team__position">{{person.position}}</p></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+
+    </section>
+</main>

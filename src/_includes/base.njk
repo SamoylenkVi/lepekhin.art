@@ -17,16 +17,11 @@
         {{content | safe}}
         {% include "partials/footer.njk" %}
         <div class="offer wrapper">
-            <button class="offer-button" type="button" aria-label="Начать работу с нами">Начать работу с нами </button>
+            <button class="offer-button button" type="button" aria-label="Начать работу с нами">Начать работу с нами </button>
         </div>
     </div>
     {% include "partials/popup.njk" %}
-    {% set js %}
-    {% include "popup.js" %}
-    {% include "menu.js" %}
-  {% endset %}
-  <script>
-      {{ js | safe }}
-  </script>
+  
+  <script src="{{ '/js/main.js' | url }}" type="module"></script>
 </body >
 </html >
