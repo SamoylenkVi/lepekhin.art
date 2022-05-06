@@ -16,11 +16,12 @@ title: "Студия Евгения Лепехина"
     </section>
     <section class="team">
         <h2 class="visually-hidden">Команда студии Евгения Лепехина</h2>
-        <div class="team__wrapper wrapper">
-            {% if team.teammates %}
-            <ul class="team__list">
-                {% for person in team.teammates %}
-                    <li class="team_item">
+        <div class="team__wrapper wrapper glide">
+            <div class="glide__track" data-glide-el="track">
+                {% if team.teammates %}
+                <ul class="team__list glide__slides">
+                    {% for person in team.teammates %}
+                    <li class="team_item glide__slide">
                         <div>
                             <picture>
                                 <source type="image/webp" srcset="../{{ person.imgWebp | url }}">
@@ -28,11 +29,132 @@ title: "Студия Евгения Лепехина"
                             </picture>
                         </div>
                         <p class="team__name">{{person.name}}</p>
-                        <p class="team__position">{{person.position}}</p></li>
-                {% endfor %}
-            </ul>
-            {% endif %}
+                        <p class="team__position">{{person.position}}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                <div class="glide__arrows team__button" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--right team__arrow" data-glide-dir=">">next</button>
+                </div>
+            </div>
+    </section>
+    <section class="work-approach">
+        <div class="work-approach__wrapper wrapper">
+            <h2 class="work-approach__title title">Подход к работе</h2>
+            <p class="work-approach__text">Наш подход можно описать двумя словами: без хуйни. Нам важно наслаждаться творческим процессом и&nbsp;результатом. Поэтому мы&nbsp;предлагаем только те&nbsp;решения, которые помогут заказчику укрепить позиции на&nbsp;рынке.</p>
+            <p class="work-approach__text">Мы&nbsp;приходим как партне&#776;ры&nbsp;и&nbsp;помощники, разбираемся в&nbsp;работе бизнеса, внедряемся в&nbsp;команду клиента и&nbsp;вместе с&nbsp;ним ищем решение, воплощаем в&nbsp;жизнь, а&nbsp;после запуска&nbsp;&mdash; помогаем развивать продукт.</p>
+            <p class="work-approach__text">В&nbsp;ходе работы над проектом мы&nbsp;активно вовлекаем заказчика в&nbsp;наш процесс и&nbsp;делаем его частью нашеи&#774; команды. Это помогает отодвинуть личные амбиции на&nbsp;второи&#774; план и&nbsp;сфокусировать внимание всех участников проекта на&nbsp;достижении результата.</p>
+            <p class="work-approach__text-featured">Отвечаем за&nbsp;продукт от&nbsp;брифа до&nbsp;запуска, чтобы&nbsp;обеспечить ожидаемыи&#774; результат</p>
         </div>
-
+    </section>
+    <section class="manifesto">
+        <div class="manifesto__wrapper wrapper">
+            <div class="manifesto__heading">
+                <h2 class="manifesto__title main-title">Манифест</h2>
+                <p class="manifesto__text">принципы, которые помогают нам делать работу хорошо</p>
+            </div>
+            <ul class="manifesto__list">
+                <li class="manifesto__item">
+                    <h3 class="manifesto__item-title">Фокус на результате</h3>
+                    <p>Наша главная задача&nbsp;&mdash; разобраться в&nbsp;бизнесе клиента, выявить проблему и&nbsp;найти наиболее удобное, красивое и&nbsp;эффективное решение. Не&nbsp;важно, сколько часов уйдёт на&nbsp;его поиски.</p>
+                </li>
+                <li class="manifesto__item">
+                    <h3 class="manifesto__item-title">Последовательность</h3>
+                    <p>Прежде чем предложить решение, изучаем контекст, определяем взаимосвязи в&nbsp;бизнесе и&nbsp;выявляем главную проблему. Не&nbsp;берёмся за&nbsp;работу, не&nbsp;разобравшись в&nbsp;задаче.</p>
+                </li>
+                <li class="manifesto__item">
+                    <h3 class="manifesto__item-title">Доверие</h3>
+                    <p>Работаем на&nbsp;обоюдном доверии. Доверяем опыту клиента в&nbsp;бизнесе, а&nbsp;он&nbsp;&mdash; нашему в&nbsp;дизайне. Без доверия ничего не&nbsp;получится.</p>
+                </li>
+                <li class="manifesto__item">
+                    <h3 class="manifesto__item-title">Честность и прямота</h3>
+                    <p>Мы&nbsp;не&nbsp;сглаживаем углы и&nbsp;не&nbsp;боимся называть говно говном. Говорим о&nbsp;проблемах, как только они возникают на&nbsp;горизонте, предлагаем решение и&nbsp;вместе с&nbsp;клиентом его внедряем.</p>
+                </li>
+                <li class="manifesto__item">
+                    <h3 class="manifesto__item-title">Внимание к деталям</h3>
+                    <p>Создаём дизайн в&nbsp;первую очередь для людей. Уделяем особое внимание мелочам в&nbsp;текстах, типографике и&nbsp;вёрстке, а&nbsp;также доступности наших сайтов для людей с&nbsp;особенностями.</p>
+                </li>
+                <li class="manifesto__item">
+                    <h3 class="manifesto__item-title">Смекалка</h3>
+                    <p>Не&nbsp;боимся сложных, нетривиальных задач, спокойно относимся к&nbsp;правкам. Нас выбирают самые дотошные и&nbsp;притязательные заказчики, потому что мы&nbsp;их&nbsp;понимаем.</p>
+                </li>
+                <li class="manifesto__item">
+                    <h3 class="manifesto__item-title">Уважение</h3>
+                    <p>Уважаем себя и&nbsp;клиента, а&nbsp;потому не&nbsp;создаём шаблонные, типовые решения и&nbsp;не&nbsp;работаем на&nbsp;поток. Работаем по&nbsp;предоплате 100%, поэтапно. Скидок нет.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="our-products">
+        <div class="our-products__wrapper wrapper">
+            <h2 class="our-products__title main-title">Мы делаем</h2>
+            <ul class="our-products__lists">
+                <ul>
+                    <li class="our-products__item">Логотипы</li>
+                    <li class="our-products__item">Айдентику</li>
+                    <li class="our-products__item">Оформление соцсетей</li>
+                    <li class="our-products__item">Печатные материалы</li>
+                    <li class="our-products__item">Наружную рекламу</li>
+                    <li class="our-products__item">Кейвижуал</li>
+                    <li class="our-products__item">Мерч</li>
+                    <li class="our-products__item">Навигацию</li>
+                </ul>
+                <ul>
+                    <li class="our-products__item">Сайты</li>
+                    <li class="our-products__item">Промостраницы</li>
+                    <li class="our-products__item">Интернет-магазины</li>
+                    <li class="our-products__item">Лендинги</li>
+                    <li class="our-products__item">Презентации</li>
+                    <li class="our-products__item">Интерфейсы</li>
+                </ul>
+                <ul>
+                    <li class="our-products__item">Копирайтинг</li>
+                    <li class="our-products__item">Редактуру</li>
+                    <li class="our-products__item">Блоги</li>
+                    <li class="our-products__item">Рассылки</li>
+                    <li class="our-products__item">Корпоративные медиа</li>
+                    <li class="our-products__item">Рекламу</li>
+                    <li class="our-products__item">Аналитику</li>
+                </ul>
+            </ul>
+            <div class="our-products__showreel showreel">
+                <div class="showreel__button-wrapper">
+                    <button class="showreel__button"><span>смотреть шоурил за&nbsp;2021 год</span></button>
+                </div>
+                <div class="showreel__content">
+                    <h3 class="showreel__title">Поможем запустить продукт и&nbsp;найдём самое элегантное<br />
+                        и&nbsp;сильное решение</h3>
+                    <a class="showreel__link" href="#">Посмотреть наши работы</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="contacts__wrapper wrapper">
+            <h2 class="contacts__title main-title">Контакты</h2>
+            <div class="contacts__content">
+                <div class="contacts__text-wrapper">
+                    <p class="contacts__text">Мы&nbsp;работаем с&nbsp;клиентами по&nbsp;всему миру. Созваниваемся с&nbsp;клиентами по&nbsp;Скайпу, Зуму, Гугл Миту или Телеграму. Если нужна личная встреча вживую, лучше договориться заранее.</p>
+                    <p class="contacts__text">Писать на&nbsp;почту можно в&nbsp;любое время. Обычно отвечаем за&nbsp;два дня, но&nbsp;если сегодня пятница, то&nbsp;свяжемся с&nbsp;вами в&nbsp;понедельник.</p>
+                    <p class="contacts__text">На&nbsp;звонки отвечаем с&nbsp;10 до&nbsp;18&nbsp;мск в&nbsp;будни, с&nbsp;12&nbsp;до&nbsp;18&nbsp;мск&nbsp;&mdash; на&nbsp;выходных.</p>
+                </div>
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:{{settings.email}}">{{settings.email}}</a>
+                        <p class="contacts__link-description">почту читают анна и&nbsp;екатерина, менеджеры студии</p>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="tel:{{ settings.tel | replace(' ', '') | replace('-', '') }}">{{settings.tel}}</a>
+                        <p class="contacts__link-description">звонки принимает Евгений, <nobr>арт-директор</nobr> студии</p>
+                    </li>
+                    <li class="contacts__item contacts__item--social">
+                        <a class="contacts__link contacts__link--social" href="{{settings.tg}}">Телега</a>
+                        <a class="contacts__link contacts__link--social" href="{{settings.vk}}">ВКонтакте</a>
+                        <p class="contacts__link-description contacts__link-description--social">подписывайтесь на&nbsp;нас в&nbsp;социальных сетях</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 </main>

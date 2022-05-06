@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <!-- Required Core Stylesheet -->
+    <link rel="stylesheet" href="{{ '/css/vendor/glide.core.min.css' | url }}">
+
+    <!-- Optional Theme Stylesheet -->
+    <link rel="stylesheet" href="{{ '/css/vendor/glide.theme.min.css' | url }}">
+
     <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
     <link rel="preload" href="{{'/fonts/Apoc-Regular-Web.woff2" as="font" type="font/woff2' | url }}" crossorigin>
@@ -21,7 +27,19 @@
         </div>
     </div>
     {% include "partials/popup.njk" %}
-  
-  <script src="{{ '/js/main.js' | url }}" type="module"></script>
-</body >
-</html >
+
+    <script src="{{ '/js/main.js' | url }}" type="module"></script>
+    <script src="{{ '/js/vendor/glide.min.js' | url }}"></script>
+
+    <script>
+        new Glide('.glide', {
+            type: 'slider',
+            startAt: 0,
+            perView: 3,
+            bound: true,
+            animationDuration: 700,
+        }).mount()
+    </script>
+</body>
+
+</html>
