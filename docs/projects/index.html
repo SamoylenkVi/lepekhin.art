@@ -49,7 +49,7 @@
                     </li>
                     
                     <li class="page-header__item">
-                        <a class="page-header__link"  href="/lepekhin.art/#/" >Журнал</a>
+                        <a class="page-header__link"  href="/lepekhin.art/404/" >Журнал</a>
                     </li>
                     
                     <li class="page-header__item">
@@ -286,9 +286,10 @@
             </ul>
         </div>
         <div class="footer__studio-information">
-            <div>
-                 <a class="footer__link" href="">Подписаться на рассылку&nbsp;→</a>
-            </div>
+            <ul>
+                <li><a class="footer__link" href="">Подписаться на рассылку&nbsp;→</a></li>
+                <li><a class="footer__link" href="mailto:hello@lepekhin.studio?subject=Работа в студии">Работать у нас</a></li>
+            </ul>
             <ul class="footer__list">
                 <li><a class="footer__link" href="">Договор и условия</a></li>
                 <li><a class="footer__link" href="https://elba.kontur.ru/card/lepekhin">Реквизиты студии</a></li>
@@ -352,7 +353,11 @@
             perView: 3,
             bound: true,
             animationDuration: 700,
-        }).mount()
+        }).mount({ Breakpoints })
+        Breakpoints.match({
+            600: { perView: 4 },
+            1200: { perView: 3 }
+        })
     </script>
 </body>
 

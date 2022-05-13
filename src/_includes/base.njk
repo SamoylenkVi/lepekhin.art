@@ -38,7 +38,11 @@
             perView: 3,
             bound: true,
             animationDuration: 700,
-        }).mount()
+        }).mount({ Breakpoints })
+        Breakpoints.match({
+            600: { perView: 4 },
+            1200: { perView: 3 }
+        })
     </script>
 </body>
 
