@@ -32,17 +32,52 @@
     <script src="{{ '/js/vendor/glide.min.js' | url }}"></script>
 
     <script>
-        new Glide('.glide', {
-            type: 'slider',
-            startAt: 0,
-            perView: 3,
-            bound: true,
-            animationDuration: 700,
-        }).mount({ Breakpoints })
-        Breakpoints.match({
-            600: { perView: 4 },
-            1200: { perView: 3 }
-        })
+        if ('.glide') {
+            new Glide('.glide', {
+                type: 'slider',
+                startAt: 0,
+                perView: 3,
+                bound: true,
+                animationDuration: 700,
+                breakpoints: {
+                    767: {
+                        gap: 15,
+                        perView: 1,
+                        peek: {
+                            before: 0,
+                            after: 129
+                        },
+                    },
+                    1023: {
+                        perView: 1,
+                        peek: 212,
+                    }
+                }
+            }).mount()
+            // new Glide('.glide', {
+            //     type: 'carousel',
+            //     startAt: 0,
+            //     perView: 3,
+            //     bound: true,
+            //     animationDuration: 700,
+            //     breakpoints: {
+            //         767: {
+            //             gap: 16,
+            //             focusAt: "left",
+            //             perView: 1,
+            //             length: 4,
+            //             peek: {
+            //                 before: 0,
+            //                 after: 200
+            //             },
+            //         },
+            //         1023: {
+            //             perView: 1,
+            //             peek: 212,
+            //         }
+            //     },
+            // }).mount()
+        }
     </script>
 </body>
 
