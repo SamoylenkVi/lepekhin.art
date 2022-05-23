@@ -14,34 +14,23 @@ teammates:
     title: Евгений Лепёхин, арт-директор
     name: Евгений Лепёхин
     position: арт-директор
-  - img: img/mikhail-vorobyov.jpg
-    imgWebp: img/mikhail-vorobyov.webp
-    title: Михаил Воробьёв, технолог
-    name: Михаил Воробьёв
-    position: технолог
-  - img: img/kira-shakarun.jpg
-    imgWebp: img/kira-shakarun.webp
-    title: Кира Шкарун, дизайнер
-    name: Кира Шкарун
+  - img: img/anna-kozyura.jpg
+    imgWebp: img/anna-kozyura.webp
+    title: Анна Козюра, менеджер
+    name: Анна Козюра
+    position: менеджер
+  - img: img/nastya-fedorova.jpg
+    imgWebp: img/nastya-fedorova.webp
+    title: Анастасия Фёдорова, редактор
+    name: Анастасия Фёдорова
+    position: редактор
+  - img: img/viktoria-sevostianova.jpg
+    imgWebp: img/viktoria-sevostianova.webp
+    title: Виктория Севостьянова, Верстальщик
+    name: Виктория Севостьянова
+    position: Верстальщик
+  - img: img/polina-shemyakina.jpg
+    imgWebp: img/polina-shemyakina.webp
+    title: Полина Шемякина, дизайнер
+    name: Полина Шемякина
     position: дизайнер
-  - img: img/evgeny-lepekhin.jpg
-    imgWebp: img/evgeny-lepekhin.webp
-    title: Евгений Лепёхин, арт-директор
-    name: Евгений Лепёхин
-    position: арт-директор
-  - img: img/mikhail-vorobyov.jpg
-    imgWebp: img/mikhail-vorobyov.webp
-    title: Михаил Воробьёв, технолог
-    name: Михаил Воробьёв
-    position: технолог
-  - img: img/kira-shakarun.jpg
-    imgWebp: img/kira-shakarun.webp
-    title: Кира Шкарун, дизайнер
-    name: Кира Шкарун
-    position: дизайнер
-  - img: img/evgeny-lepekhin.jpg
-    imgWebp: img/evgeny-lepekhin.webp
-    title: Евгений Лепёхин, арт-директор
-    name: Евгений Лепёхин
-    position: арт-директор
-  
