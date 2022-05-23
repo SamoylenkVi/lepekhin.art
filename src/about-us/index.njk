@@ -23,7 +23,7 @@ title: "Студия Евгения Лепехина"
                     {% for person in team.teammates %}
                     <li class="team_item glide__slide">
                         <div>
-                            <picture>
+                            <picture class="team__picture-wrapper">
                                 <source type="image/webp" srcset="../{{ person.imgWebp | url }}">
                                 <img src="../{{ person.img | url }}" class="team__picture" width="260" height="400" alt="{{person.title}}" loading="lazy">
                             </picture>
