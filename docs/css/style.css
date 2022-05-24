@@ -718,6 +718,7 @@ img {
 .popup__wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    height: 100vh;
 }
 
 .popup__button-close {
@@ -797,6 +798,7 @@ img {
     box-sizing: border-box;
     position: relative;
     z-index: 0;
+    border-radius: 0;
 }
 
 .form__field:placeholder-shown + label {
@@ -922,7 +924,7 @@ img {
 }
 
 .project__navigation-link:not([href]) {
-    border-bottom: 1px solid var(--basic-black);
+    border-bottom: 2px solid var(--basic-black);
 }
 
 .project-footer__team-position,
@@ -1769,18 +1771,17 @@ img {
 
 .manifesto__item {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 1fr 3fr 6fr;
     align-items: start;
     min-height: 160px;
     border-top: 1px solid var(--input-border);
     padding-top: 39px;
-    padding-left: 12px;
     position: relative;
 }
 
 .manifesto__item-title {
     margin: 0;
-    justify-self: center;
+    /* justify-self: center; */
     font-size: var(--featured-size);
     line-height: var(--project-link-height);
     font-weight: 400;
@@ -1794,7 +1795,7 @@ img {
 .manifesto__item::before {
     counter-increment: my-sec-counter;
     content: "" counter(my-sec-counter) " ";
-    position: absolute;
+    /* position: absolute; */
     font-size: var(--featured-size);
     line-height: var(--project-link-height);
     font-weight: 400;
@@ -1894,6 +1895,7 @@ img {
     .our-products__lists {
         padding-top: 31px;
         gap: 15px;
+        flex-direction: column;
     }
 
     .our-products__item {
