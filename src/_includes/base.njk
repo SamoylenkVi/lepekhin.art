@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <!-- Required Core Stylesheet -->
-    <link rel="stylesheet" href="{{ '/css/vendor/glide.core.min.css' | url }}">
+    <!-- <link rel="stylesheet" href="{{ '/css/vendor/glide.core.min.css' | url }}"> -->
 
     <!-- Optional Theme Stylesheet -->
-    <link rel="stylesheet" href="{{ '/css/vendor/glide.theme.min.css' | url }}">
+    <!-- <link rel="stylesheet" href="{{ '/css/vendor/glide.theme.min.css' | url }}"> -->
 
     <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
@@ -29,7 +29,7 @@
     {% include "partials/popup.njk" %}
 
     <script src="{{ '/js/main.js' | url }}" type="module"></script>
-    <script src="{{ '/js/vendor/glide.min.js' | url }}"></script>
+    <!-- <script src="{{ '/js/vendor/glide.min.js' | url }}"></script>
 
     <script>
         if ('.glide') {
@@ -38,11 +38,13 @@
                 startAt: 0,
                 perView: 3,
                 bound: true,
-                animationDuration: 700,
+                animationDuration: 300,
                 breakpoints: {
                     767: {
+                        type: 'carousel',
                         gap: 15,
                         perView: 1,
+                        animationDuration: 0,
                         peek: {
                             before: 0,
                             after: 129
@@ -55,7 +57,7 @@
                 }
             }).mount()
         }
-    </script>
+    </script> -->
 </body>
 
 </html>
