@@ -1,6 +1,6 @@
 const SLIDES_PER_PAGE = 3;
 
-const sliderButton = document.querySelector('.ç');
+const sliderButton = document.querySelector('.team__arrow');
 if (sliderButton) {
 
     const sliderWrapper = document.querySelector('.team__list')
