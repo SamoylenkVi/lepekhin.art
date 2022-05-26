@@ -1690,7 +1690,7 @@ img {
 }
 
 .team__arrow:hover {
-    transform: scale(0.7) translateX(10px);
+    transform: scale(0.7);
 }
 
 
