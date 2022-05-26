@@ -1685,7 +1685,14 @@ img {
     margin-left: auto;
     display: block;
     margin-top: 20px;
+    cursor: pointer;
+    transition-duration: 500ms;
 }
+
+.team__arrow:hover {
+    transform: scale(0.7) translateX(10px);
+}
+
 
 @media (max-width: 768px) {
     .team {
@@ -1705,8 +1712,27 @@ img {
         gap: 15px;
     }
 
+    .team_item {
+        flex-basis: 63%;
+        margin-left: 0;
+    }
+
+    .team__name {
+        font-size: var(--base-size);
+        line-height: var(--mobile-text-height);
+    }
+    .team__position {
+        font-size: 12px;
+        line-height: var(--small-text-size);
+        padding-top: 5px;
+    }
+
     .team__list::-webkit-scrollbar {
         display: none;
+    }
+
+    .team__button {
+        border-top: none;
     }
 
     .team__arrow {
@@ -1760,7 +1786,7 @@ img {
 
 @media (max-width: 768px) {
     .work-approach {
-        padding-top: 71px;
+        padding-top: 62px;
     }
 
     .work-approach__title {
@@ -1863,7 +1889,7 @@ img {
     }
 
     .manifesto__item::before {
-        top: 28px;
+        top: 30px;
         font-size: var(--manifesto-mobile-size);
         line-height: var(--mobile-menu-height);
         position: absolute;
