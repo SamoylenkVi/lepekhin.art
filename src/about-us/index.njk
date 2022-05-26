@@ -17,11 +17,11 @@ title: "Студия Евгения Лепехина"
     <section class="team">
         <h2 class="visually-hidden">Команда студии Евгения Лепехина</h2>
         <div class="team__wrapper wrapper glide">
-            <div class="glide__track" data-glide-el="track">
+            <div>
                 {% if team.teammates %}
-                <ul class="team__list glide__slides">
+                <ul class="team__list">
                     {% for person in team.teammates %}
-                    <li class="team_item glide__slide">
+                    <li class="team_item">
                         <div>
                             <picture class="team__picture-wrapper">
                                 <source type="image/webp" srcset="../{{ person.imgWebp | url }}">
@@ -34,9 +34,6 @@ title: "Студия Евгения Лепехина"
                     {% endfor %}
                 </ul>
                 {% endif %}
-                <div class="glide__arrows team__button" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--right team__arrow" data-glide-dir=">">next</button>
-                </div>
             </div>
     </section>
     <section class="work-approach">

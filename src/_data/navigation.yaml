@@ -1,13 +1,9 @@
 items:
   - text: Проекты
     url: /projects/
-  - text: Студия
-    url: / mailing-list/
-  - text: Курсы
+  - text: О нас
     url: /about-us/
+  - text: Рассылка
+    url: / mailing-list/
   - text: Журнал
     url: /404/
-  - text: Магазин
-    url: /#/
-  - text: Сервисы
-    url: /#/
