@@ -1290,13 +1290,16 @@ img {
 }
 
 .mailing-list__aside span {
+    flex-basis: 45%;
+    align-self: center;
+    padding-top: 31px;
+}
+
+.mailing-list__aside--color {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(90deg, #f9582c 0%, #ff9900 96.73%);
-    flex-basis: 45%;
-    align-self: center;
-    padding-top: 31px;
 }
 
 @media (max-width: 768px) {
@@ -1827,6 +1830,7 @@ img {
 .manifesto__item p {
     margin: 0;
     max-width: 400px;
+    padding-left: 20px;
 }
 
 .manifesto__item::before {
