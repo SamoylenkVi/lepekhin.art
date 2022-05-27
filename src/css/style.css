@@ -830,11 +830,11 @@ img {
 .form__field + label {
     position: absolute;
     left: 2px;
-    top: 1.5em;
+    top: 1.3em;
     transition: transform 0.5s, color 0.4s;
     pointer-events: none;
     transform-origin: top left;
-    transform: translateY(-100%) scale(0.5);
+    transform: translateY(-100%) scale(0.7);
 }
 
 .form__field:focus {
@@ -2140,6 +2140,7 @@ img {
 .contacts__link--social {
     margin-right: 24px;
     position: relative;
+    display: inline-flex;
 }
 
 .contacts__link--social:not(:last-of-type)::before {
@@ -2195,6 +2196,12 @@ img {
 
     .contacts__item:last-of-type {
         padding-bottom: 0;
+    }
+
+    .contacts__link--social:not(:last-of-type)::before {
+        right: -9px;
+        width: 5px;
+        height: 5px;
     }
 }
 .showreel-video {
