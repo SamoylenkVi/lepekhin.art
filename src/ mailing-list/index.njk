@@ -49,11 +49,11 @@ title: "Студия Евгения Лепехина"
             <p class="subscribe-list__text">Введите электронную почту, на&nbsp;которую вы&nbsp;хотите получать письма и&nbsp;нажмите &laquo;Подписаться&raquo;. Если во&nbsp;&laquo;Входящих&raquo; пусто, проверьте папку &laquo;Спам&raquo;. Чтобы письма не&nbsp;попадали в&nbsp;спам, добавьте нашу почту в&nbsp;белый лист.</p>
             <form class="subscribe-list__form form" method="get" action="https://echo.htmlacademy.ru/">
                 <p class="form__item">
-                    <input class="form__field" data-validate="email" type="email" id="email" name="email" aria-label="Введите ваш email" pattern="^(?:[-a-z\d\+\*\/\?!{}~_%&'=^$#]+(?:\.[-a-z\d\+\*\/\?!{}~_%&'=^$#]+)*)@(?:[-a-z\d_]+\.){1,60}[a-z]{2,6}$" placeholder=" " required>
-                    <label for="email">Электронная почта</label>
+                    <input class="form__field" data-validate="email-list" type="email" id="email-list" name="email" aria-label="Введите ваш email" pattern="^(?:[-a-z\d\+\*\/\?!{}~_%&'=^$#]+(?:\.[-a-z\d\+\*\/\?!{}~_%&'=^$#]+)*)@(?:[-a-z\d_]+\.){1,60}[a-z]{2,6}$" placeholder=" " required>
+                    <label for="mail-list">Электронная почта</label>
                 </p>
                 <button type="submit" class="subscribe-list__button form__button-submit">Подписаться</button>
-                <p class="subscribe-list__agreement">Нажимая кнопку &laquo;Подписаться&raquo;, вы&nbsp;соглашаетесь с&nbsp;политикой обработки персональных данных</p>
+                <p class="subscribe-list__agreement">Нажимая кнопку &laquo;Подписаться&raquo;, вы&nbsp;соглашаетесь с&nbsp;<a class="subscribe-list__link" href="{{settings.policy}}">политикой обработки персональных данных</a></p>
             </form>
         </div>
     </section>
