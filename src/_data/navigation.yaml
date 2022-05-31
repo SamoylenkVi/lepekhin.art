@@ -4,6 +4,6 @@ items:
   - text: О нас
     url: /about-us/
   - text: Рассылка
-    url: / mailing-list/
+    url: /mailing-list/
   - text: Журнал
     url: /404/

@@ -9,7 +9,7 @@ title: "Студия Евгения Лепехина"
     </div>
     <section class="about-us">
         <div class="about-us__wrapper wrapper">
-            <p class="about-us__description">Мы&nbsp;&mdash; мультидисциплинарная <nobr>дизайн-студия</nobr> с&nbsp;распределённой командой дизайнеров, разработчиков и&nbsp;менеджеров из&nbsp;разных стран.</p>
+            <p class="about-us__description">Мы&nbsp;&mdash; мультидисциплинарная <span>дизайн-студия</span> с&nbsp;распределённой командой дизайнеров, разработчиков и&nbsp;менеджеров из&nbsp;разных стран.</p>
             <p class="about-us__description"> Умеем работать, решать сложные задачи. Ценим свой труд, уважаем себя и&nbsp;не&nbsp;делаем ширпотреб.</p>
             <p class="about-us__advantage">Создаём сильные решения, которые помогают бизнесу развиваться, выходить на&nbsp;новые рынки и&nbsp;зарабатывать больше</p>
         </div>
@@ -17,31 +17,30 @@ title: "Студия Евгения Лепехина"
     <section class="team">
         <h2 class="visually-hidden">Команда студии Евгения Лепехина</h2>
         <div class="team__wrapper wrapper glide">
-            <div>
-                {% if team.teammates %}
-                <ul class="team__list">
-                    {% for person in team.teammates %}
-                    <li class="team_item">
-                        <div>
-                            <picture class="team__picture-wrapper">
-                                <source type="image/webp" srcset="../{{ person.imgWebp | url }}">
-                                <img src="../{{ person.img | url }}" class="team__picture" width="260" height="400" alt="{{person.title}}" loading="lazy">
-                            </picture>
-                        </div>
-                        <p class="team__name">{{person.name}}</p>
-                        <p class="team__position">{{person.position}}</p>
-                    </li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-            </div>
+            {% if team.teammates %}
+            <ul class="team__list">
+                {% for person in team.teammates %}
+                <li class="team__item">
+                    <div>
+                        <picture class="team__picture-wrapper">
+                            <source type="image/webp" srcset="../{{ person.imgWebp | url }}">
+                            <img src="../{{ person.img | url }}" class="team__picture" width="260" height="400" alt="{{person.title}}" loading="lazy">
+                        </picture>
+                    </div>
+                    <p class="team__name">{{person.name}}</p>
+                    <p class="team__position">{{person.position}}</p>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
     </section>
     <section class="work-approach">
         <div class="work-approach__wrapper wrapper">
             <h2 class="work-approach__title title">Подход к работе</h2>
             <p class="work-approach__text">Наш подход можно описать двумя словами: без хуйни. Нам важно наслаждаться творческим процессом и&nbsp;результатом. Поэтому мы&nbsp;предлагаем только те&nbsp;решения, которые помогут заказчику укрепить позиции на&nbsp;рынке.</p>
-            <p class="work-approach__text">Мы&nbsp;приходим как партне&#776;ры&nbsp;и&nbsp;помощники, разбираемся в&nbsp;работе бизнеса, внедряемся в&nbsp;команду клиента и&nbsp;вместе с&nbsp;ним ищем решение, воплощаем в&nbsp;жизнь, а&nbsp;после запуска&nbsp;&mdash; помогаем развивать продукт.</p>
-            <p class="work-approach__text">В&nbsp;ходе работы над проектом мы&nbsp;активно вовлекаем заказчика в&nbsp;наш процесс и&nbsp;делаем его частью нашеи&#774; команды. Это помогает отодвинуть личные амбиции на&nbsp;второи&#774; план и&nbsp;сфокусировать внимание всех участников проекта на&nbsp;достижении результата.</p>
+            <p class="work-approach__text">Мы&nbsp;приходим как партнёры и&nbsp;помощники, разбираемся в&nbsp;работе бизнеса, внедряемся в&nbsp;команду клиента и&nbsp;вместе с&nbsp;ним ищем решение, воплощаем в&nbsp;жизнь, а&nbsp;после запуска&nbsp;&mdash; помогаем развивать продукт.</p>
+            <p class="work-approach__text">В&nbsp;ходе работы над проектом мы&nbsp;активно вовлекаем заказчика в&nbsp;наш процесс и&nbsp;делаем его частью команды. Это помогает отодвинуть личные амбиции на&nbsp;второй план и&nbsp;сфокусировать внимание всех участников проекта на&nbsp;достижении результата.</p>
             <p class="work-approach__text-featured">Отвечаем за&nbsp;продукт от&nbsp;брифа до&nbsp;запуска, чтобы&nbsp;обеспечить ожидаемыи&#774; результат</p>
         </div>
     </section>
@@ -86,7 +85,7 @@ title: "Студия Евгения Лепехина"
     <section class="our-products">
         <div class="our-products__wrapper wrapper">
             <h2 class="our-products__title main-title">Мы делаем</h2>
-            <ul class="our-products__lists">
+            <div class="our-products__lists">
                 <ul>
                     <li class="our-products__item">Логотипы</li>
                     <li class="our-products__item">Айдентику</li>
@@ -114,7 +113,7 @@ title: "Студия Евгения Лепехина"
                     <li class="our-products__item">Рекламу</li>
                     <li class="our-products__item">Аналитику</li>
                 </ul>
-            </ul>
+            </div>
             <div class="our-products__showreel showreel">
                 <div class="showreel__picture">
                 </div>
@@ -145,7 +144,7 @@ title: "Студия Евгения Лепехина"
                     </li>
                     <li class="contacts__item">
                         <a class="contacts__link" href="tel:{{ settings.tel | replace(' ', '') | replace('-', '') }}">{{settings.tel}}</a>
-                        <p class="contacts__link-description">звонки принимает Евгений, <nobr>арт-директор</nobr> студии</p>
+                        <p class="contacts__link-description">звонки принимает Евгений, <span>арт-директор</span> студии</p>
                     </li>
                     <li class="contacts__item contacts__item--social">
                         <a class="contacts__link contacts__link--social" href="{{settings.tg}}">Телега</a>
