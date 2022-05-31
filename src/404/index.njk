@@ -8,21 +8,6 @@ title: "Студия Евгения Лепехина"
         <div class="error-page__wrapper wrapper">
             <p>404</p>
             <h1 class="error-page__title">Упс, такой страницы не существует</h1>
-            <nav class="error-page__navigation navigation">
-                <ul class="navigation__list error-page__navigation-list">
-                    {% for item in navigation.items %}
-                    <li class="navigation__item">
-                        <a class="error-page__navigation-link navigation__link" {% if item.url in page.url %} aria-current="page" {% else %} href="{{item.url | url}}" {% endif %}>{{item.text}}</a>
-                    </li>
-                    {% endfor %}
-                    <li class="navigation__item">
-                        <a class="error-page__navigation-link navigation__link" href="mailto:{{settings.email}}?subject=Работа в студии">Работать у нас</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="error-page__navigation-link navigation__link" href="mailto:{{settings.email}}?subject=Работа в студии">Обсудить проект</a>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </section>
 </main>
