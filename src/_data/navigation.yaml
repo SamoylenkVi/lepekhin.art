@@ -1,9 +1,5 @@
 items:
-  - text: Проекты
-    url: /projects/
-  - text: О нас
-    url: /about-us/
   - text: Рассылка
     url: /mailing-list/
-  - text: Журнал
-    url: /404/
+  - text: О нас
+    url: /about-us/
