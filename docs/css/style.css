@@ -1262,6 +1262,10 @@ img {
         gap: 5px;
         padding-bottom: 0;
     }
+
+    .page-description__text {
+        padding-top: 26px;
+    }
 }
 
 .mailing-list__content {
@@ -1429,7 +1433,8 @@ img {
 }
 
 .subscribe-list__form .form__field:focus {
-    background-image: linear-gradient(var(--subscribe-green), var(--subscribe-green)), radial-gradient(#f8582b 16.24%, #ff9900 79.43%);
+    border-color: var(--basic-white);
+    background-image: none;
 }
 
 .subscribe-list__button {
@@ -2262,7 +2267,62 @@ img {
 }
 
 @media (max-width: 768px) {
+    .error-page__wrapper p {
+        font-size: 150px;
+        line-height: 150px;
+    }
+
     .error-page__title {
         text-align: center;
+        font-size: var(--base-size);
+        line-height: var(--mobile-text-height);
+        padding-top: 10px;
+    }
+}
+
+/* Сообщение об успешно отправленной форме */
+.popup__success-message {
+    display: none;
+    max-width: 690px;
+    padding-top: 60px;
+}
+
+.success-message__title {
+    margin: 0;
+    font-family: var(--commons-family);
+    font-weight: 600;
+    font-size: var(--mobile-menu-size);
+    line-height: var(--mobile-menu-height);
+    color: var(--subscribe-green);
+    text-transform: uppercase;
+}
+
+.success-message__text {
+    margin: 0;
+    font-size: var(--base-size);
+    line-height: var(--base-height);
+    padding-top: 10px;
+}
+
+.success-message__link {
+    text-decoration: none;
+    font-size: var(--base-size);
+    line-height: var(--base-height);
+    color: var(--basic-black);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition-duration: 500ms;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.success-message__link:hover,
+.success-message__link:focus {
+    color: var(--hover-link);
+    border-color: var(--hover-border-link);
+}
+
+@media (max-width: 768px) {
+    .success-message__text {
+        line-height: var(--mobile-text-height);
     }
 }
